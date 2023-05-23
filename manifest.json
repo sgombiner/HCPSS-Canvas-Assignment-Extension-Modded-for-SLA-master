@@ -1,0 +1,16 @@
+  {
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "name": "SLA Canvas Assignment Extension",
+    "version": "4.0",
+    "description": "Collect all assignments for courses in Canvas",
+    "manifest_version": 3,
+     "content_scripts": [
+       {
+         "matches": ["https://scienceleadership.instructure.com/*"],
+         "js": ["contentScript.js"],
+          "run_at": "document_idle"
+       }
+     ]
+  }
+
